@@ -135,5 +135,8 @@ nav{
 
 /*Tablets*/
 @media (min-width: 767px) and (max-width: 1000px) {
-
+  /*Estilos header*/
+  .menu-hamburguesa, .menu-exit{
+    display: none;
+   } 
 }
