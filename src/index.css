@@ -78,6 +78,57 @@ nav{
 /*Media Queries Smartphones*/
 
 @media (max-width: 767px) {
+    
+ 
+  /* Estilos del header */
+   .menu-hamburguesa {
+    display: flex;
+    top: 0;
+    right: 0;
+  }
+  .menu-exit{
+    display: none;
+  }
+  
+  header {
+    width: 100%;
+    background-color: #202124;
+    display: flex;
+     align-items: center; 
+     text-align: center;
+    justify-content: space-between;
+    position: fixed;
+    border-bottom: none;
+    z-index: 1;
+  }
+  .codeHeader {
+    display: flex;
+    width: 2rem;
+    height: auto;
+    color: #bdbdbd;
+    position: relative;
+  }
+  nav {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background-color: #333;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  nav a {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  nav.active {
+    display: flex;
+  }
 
 }
 
