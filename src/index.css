@@ -71,3 +71,18 @@ nav{
   color: #50a760;
   transition: all 0.2s ease-in-out;
 }
+
+
+
+
+/*Media Queries Smartphones*/
+
+@media (max-width: 767px) {
+
+}
+
+
+/*Tablets*/
+@media (min-width: 767px) and (max-width: 1000px) {
+
+}
