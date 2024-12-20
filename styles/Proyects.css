@@ -74,3 +74,40 @@ transition: all 0.3s ease-in-out;
   filter: brightness(0.6);
   transition: all 0.3s ease;
 }
+
+/*Tablets*/
+@media (min-width: 767px) and (max-width: 1000px) {
+
+
+
+   
+  /*Estilos de proyectos*/
+  .proyectos{
+    display:  flex;
+    flex-direction: column;
+  }
+ 
+.contProyectos{
+  width: 42rem;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
+
+}
+  .cardProyect {
+    display: flex;
+    max-height: auto;
+    max-width: 20rem;
+  }
+  .contCols {
+    display: flex;
+    justify-content: center;
+  }
+  .colImgCard,
+  .colInfoCard {
+    width: auto;
+    height: auto;
+  }
+}
