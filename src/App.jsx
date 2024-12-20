@@ -7,6 +7,9 @@ function App() {
     <>
       <Header />
       <Hero />
+      <div className="contSections">
+        
+      </div>
     </>
   );
 }
