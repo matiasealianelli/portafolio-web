@@ -224,6 +224,26 @@ gap: 1rem;
     display: flex;
   }
 
+  /*Estilos del hero*/
+
+  .hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .titleHero {
+    max-width: 21rem;
+  }
+  .textHero {
+    max-width: 21rem;
+  }
+  .contIconosRedesNav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
 }
 
 
