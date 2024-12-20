@@ -1,4 +1,28 @@
 
+const menuHamburguesa = document.querySelector(".menu-hamburguesa");
+const menuExit = document.querySelector(".menu-exit");
+const nav = document.querySelector("nav");
+if (window.matchMedia("(max-width: 767px)").matches) {
+  menuHamburguesa.addEventListener("click", () => {
+    nav.classList.add("active");
+    menuHamburguesa.style.display = "none";
+    menuExit.style.display = "block";
+  });
+
+  menuExit.addEventListener("click", () => {
+    nav.classList.remove("active");
+    menuExit.style.display = "none";
+    menuHamburguesa.style.display = "block";
+  });
+
+  document.querySelectorAll("nav a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
+      menuExit.style.display = "none";
+      menuHamburguesa.style.display = "block";
+    });
+  });
+};
 
 function Header() {
     return (
