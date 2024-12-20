@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Proyects from "./components/Proyects";
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
       <Header />
       <Hero />
       <div className="contSections">
-        
+        <Proyects />
       </div>
     </>
   );
