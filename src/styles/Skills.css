@@ -1,0 +1,11 @@
+/*Media Queries Smartphones*/
+
+@media (max-width: 767px) {
+
+}
+
+
+/*Tablets*/
+@media (min-width: 767px) and (max-width: 1000px) {
+
+}
