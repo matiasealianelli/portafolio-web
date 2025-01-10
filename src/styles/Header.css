@@ -1,3 +1,43 @@
+.codeHeader {
+  display: flex;
+  width: 2rem;
+  height: auto;
+  color: #bdbdbd;
+  position: relative;
+}
+header {
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #202124;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  border-bottom: none;
+  z-index: 1;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.menu-hamburguesa,
+.menu-exit {
+  display: none;
+}
+.title {
+  display: inline-block;
+  width: auto;
+  padding-bottom: 2.5rem;
+}
+.codeHeader:hover,
+.enlace:hover,
+.enlaceMail:hover,
+.enlaceFooter:hover {
+  color: #50a760;
+  transition: all 0.2s ease-in-out;
+}
+
 /*Media Queries Smartphones*/
 
 @media (max-width: 767px) {
