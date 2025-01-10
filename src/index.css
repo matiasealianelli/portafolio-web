@@ -1,0 +1,31 @@
+/* selectores generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #202124;
+  color: #bdbdbd;
+  font-family: "Roboto", serif;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #bdbdbd;
+}
+section {
+  scroll-margin-top: 5rem;
+}
+.contSections {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
