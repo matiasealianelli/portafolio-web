@@ -91,11 +91,44 @@
 /*Media Queries Smartphones*/
 
 @media (max-width: 767px) {
+    .hero {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      padding: 0 0.5rem;
+    }
+    .contWelcome{
+      max-width: 19.5rem;
+    }
+    .titleHero {
+      max-width: 19.5rem;
+    }
+    .textHero {
+      max-width: 19.5rem;
+    }
+    .contIconosRedesNav {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
 
-}
 
-
-/*Tablets*/
-@media (min-width: 767px) and (max-width: 1000px) {
-
-}
+  /*Tablets*/
+  @media (min-width: 767px) and (max-width: 1000px) {
+      .hero {
+          width: auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 3rem;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+        }
+        .contIconosRedesNav{
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+  }
