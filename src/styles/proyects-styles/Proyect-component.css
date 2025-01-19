@@ -75,13 +75,64 @@
   /*Media Queries Smartphones*/
   
   @media (max-width: 767px) {
-
+    .cardProyect {
+      width: 20rem;
+    }
+    .contInfoProject {
+      padding: 1rem;
+    }
+    .colImgCard {
+      height:auto;
+    }
+    .imgCard {
+      width: auto;
+      object-fit: contain;
+    }
+    .colImgCard,
+    .colInfoCard {
+      height: auto;
+      max-height: 30rem; /* Establece un límite máximo */
+      overflow: hidden; /* Oculta el contenido que desborda */
+    }
   }
   
 
   /*Tablets*/
   
   @media (min-width: 767px) and (max-width: 1000px) {
-
+    .proyectos {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1rem;
+    }
+    .contProyectos {
+      width: 42rem;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 2rem;
+    }
+    .cardProyect {
+      display: flex;
+      max-height: auto;
+      max-width: 20rem;
+    }
+    .contCols {
+      display: flex;
+      justify-content: center;
+    }
+    .colImgCard,
+    .colInfoCard {
+      width: auto;
+      height: auto;
+    }
+    .colInfoCard {
+      width: 100%;
+    }
+    .contInfoProject {
+      justify-content: start;
+      padding: 1rem;
+    }
   }
   
