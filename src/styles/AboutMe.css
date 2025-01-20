@@ -1,3 +1,17 @@
+.sobreMi {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+  }
+  .contSobreMi {
+    width: 100%;
+  
+  }
+  .text-sobremi {
+    max-width: 50rem;
+    line-height: 1.8rem;
+  }
 /*Media Queries Smartphones*/
 
 @media (max-width: 767px) {
