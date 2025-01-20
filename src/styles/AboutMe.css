@@ -1,25 +1,35 @@
 .sobreMi {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 5rem;
-  }
-  .contSobreMi {
-    width: 100%;
-  
-  }
-  .text-sobremi {
-    max-width: 50rem;
-    line-height: 1.8rem;
-  }
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+.contSobreMi {
+  width: 100%;
+}
+.text-sobremi {
+  max-width: 50rem;
+  line-height: 1.8rem;
+}
 /*Media Queries Smartphones*/
 
 @media (max-width: 767px) {
-
+  .contSobreMi {
+    width: 100%;
+  }
+  .text-sobremi {
+    width: 20rem;
+  }
 }
 
 
 /*Tablets*/
 @media (min-width: 767px) and (max-width: 1000px) {
-
+    .text-sobremi {
+        max-width: 40rem;
+      }
+      /*Estilos de contacto*/
+      form {
+        max-width: 40rem;
+      }
 }
