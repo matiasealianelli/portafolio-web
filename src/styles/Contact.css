@@ -56,11 +56,15 @@
 /*Media Queries Smartphones*/
 
 @media (max-width: 767px) {
-
+  form {
+    width: 20rem;
+  }
 }
 
 
 /*Tablets*/
 @media (min-width: 767px) and (max-width: 1000px) {
-
+  form {
+    max-width: 40rem;
+  }
 }
