@@ -55,7 +55,25 @@ footer {
 /*Media Queries Smartphones*/
 
 @media (max-width: 767px) {
-
+    .contFooter {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+      }
+      .contMenuFooter {
+        height: auto;
+        width: min-content;
+      }
+      .redSocFooter {
+        width: fit-content;
+      }
+      ul {
+        display: inline-block;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+      }
 }
 
 
