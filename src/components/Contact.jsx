@@ -47,7 +47,7 @@ function Contact() {
       const response = await fetch(
         "https://backend-portafolio-letr.onrender.com/send",
         {
-          origin: "http://localhost:5173/",
+          origin: "https://matiasealianelli.github.io/portafolio-web/",
           method: "POST",
           headers: {
             "Content-Type": "application/json",
