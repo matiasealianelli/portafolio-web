@@ -7,19 +7,19 @@ function Footer() {
       <div className="contMenuFooter">
         <ul>
           <li>
-            <a href="http://127.0.0.1:5500/#" className="enlaceFooter">Inicio</a>
+            <a href="https://matiasealianelli.github.io/portafolio-web/#hero" className="enlaceFooter">Inicio</a>
           </li>
           <li>
-            <a href="http://127.0.0.1:5500/#" className="enlaceFooter">Sobre mi</a>
+            <a href="https://matiasealianelli.github.io/portafolio-web/#proyectos" className="enlaceFooter">Proyectos</a>
           </li>
           <li>
-            <a href="http://127.0.0.1:5500/#" className="enlaceFooter">Habilidades</a>
+            <a href="https://matiasealianelli.github.io/portafolio-web/#sobreMi" className="enlaceFooter">Sobre mi</a>
           </li>
           <li>
-            <a href="http://127.0.0.1:5500/#" className="enlaceFooter">Proyectos</a>
+            <a href="https://matiasealianelli.github.io/portafolio-web/#skills" className="enlaceFooter">Habilidades</a>
           </li>
           <li>
-            <a href="http://127.0.0.1:5500/#" className="enlaceFooter">Contacto</a>
+            <a href="https://matiasealianelli.github.io/portafolio-web/#contacto" className="enlaceFooter">Contacto</a>
           </li>
         </ul>
       </div>
