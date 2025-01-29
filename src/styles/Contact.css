@@ -40,6 +40,24 @@
     border-radius: 5px;
     border: none;
   }
+  .spinner{
+    animation-duration: 2s;
+    animation-name: loading;
+    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    transform-origin: center;
+    margin-left: 0.5rem;
+  }
+  
+  @keyframes loading {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
    .styleInputForm:focus, .styleInputForm:checked, input:focus, input:checked{
     background-color: #bdbdbd;
     box-shadow: 0 0 5px #50a760;

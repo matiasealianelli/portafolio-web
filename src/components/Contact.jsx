@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import "../styles/Contact.css";
+import spinner from '../../public/assets/img/spinner.svg'
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -14,7 +15,11 @@ function Contact() {
     setFormData({ ...formData, [name]: value });
   };
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleSubmit = async (e) => {
+    setIsLoading(true);
+    setIsLoading(true);
     e.preventDefault();
 
     // Validar datos antes de enviarlos al backend
@@ -25,22 +30,27 @@ function Contact() {
       !formData.mensaje
     ) {
       alert("Todos los campos son obligatorios.");
-      return;
+      setIsLoading(false);
+      return ;
     }
     if (!/^[a-zA-Z\s]+$/.test(formData.name)) {
       alert("Por favor ingresa un nombre válido.");
+      setIsLoading(false);
       return;
     }
     if (!/^\d+$/.test(formData.phone)) {
       alert("Por favor ingresa un número de teléfono válido.");
+      setIsLoading(false);
       return;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.correo)) {
       alert("Por favor ingresa un correo válido.");
+      setIsLoading(false);
       return;
     }
     if (formData.mensaje.length < 10) {
       alert("El mensaje debe tener al menos 10 caracteres.");
+      setIsLoading(false);
       return;
     }
     try {
@@ -67,11 +77,12 @@ function Contact() {
       } else {
         const errorData = await response.json();
         alert(`Error: ${errorData.error || "No se pudo enviar el mensaje."}`);
+        setIsLoading(false);
       }
-    } catch (error) {
-      console.log("Error al enviar el formulario: :'(", error);
-      alert("Hubo un problema al conectar con el servidor.");
+    } finally {
+      setIsLoading(false);
     }
+    setIsLoading(false);
   };
 
   return (
@@ -81,64 +92,73 @@ function Contact() {
         Si quieres contactarme, puedes hacerlo a través de este formulario.
         Tengo las habilidades necesarias para hacer realidad tus proyectos
       </p>
-      <form id="form" onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">
-            Nombre
-          </label>
-          <input
-            type="text"
-            name="name"
-            className="form-control inputMail styleInputForm"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Escribi tu nombre"
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="phone" className="form-label">
-            Telefono
-          </label>
-          <input
-            type="text"
-            name="phone"
-            className="form-control inputMail styleInputForm"
-            value={formData.phone}
-            onChange={handleChange}
-            placeholder="Escribi tu teléfono"
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="correo" className="form-label">
-            Correo
-          </label>
-          <input
-            type="email"
-            name="correo"
-            className="form-control inputMail styleInputForm"
-            value={formData.correo}
-            onChange={handleChange}
-            placeholder="Escribi tu correo electronico"
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="mensaje" className="form-label">
-            Mensaje
-          </label>
-          <textarea
-            name="mensaje"
-            className="form-control textareaForm styleInputForm"
-            value={formData.mensaje}
-            onChange={handleChange}
-            rows={3}
-            placeholder="Escribi tu mensaje"
-          />
-        </div>
-
-        <button type="submit" target="_blank" className="btnForm  ">
-          Enviar Mensaje
-        </button>
-      </form>
+      <Suspense fallback={<div>Loading...</div>}>
+        <form id="form" onSubmit={handleSubmit}>
+          <div className="mb-3">
+            <label htmlFor="name" className="form-label">
+              Nombre
+            </label>
+            <input
+              type="text"
+              name="name"
+              className="form-control inputMail styleInputForm"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Escribi tu nombre"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="phone" className="form-label">
+              Telefono
+            </label>
+            <input
+              type="text"
+              name="phone"
+              className="form-control inputMail styleInputForm"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Escribi tu teléfono"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="correo" className="form-label">
+              Correo
+            </label>
+            <input
+              type="email"
+              name="correo"
+              className="form-control inputMail styleInputForm"
+              value={formData.correo}
+              onChange={handleChange}
+              placeholder="Escribi tu correo electronico"
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="mensaje" className="form-label">
+              Mensaje
+            </label>
+            <textarea
+              name="mensaje"
+              className="form-control textareaForm styleInputForm" onChange={handleChange}
+              value={formData.mensaje} placeholder="Escribi tu mensaje"></textarea>
+          </div>
+          {isLoading ? (
+            <button className="btnForm btnLoader" disabled>  
+              Enviando
+              <img src={spinner} alt="spinner" className="spinner" />
+            
+            </button>
+          ) : (
+            <button
+              type="submit"
+              target="_blank"
+              className="btnForm"
+              onSubmit={handleSubmit}>
+              Enviar Mensaje
+            </button>
+          )}
+        </form>
+      </Suspense>
     </section>
   );
 }
