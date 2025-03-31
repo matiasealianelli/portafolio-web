@@ -1,6 +1,14 @@
 [
     {
         "id": 1,
+        "title": "Landing page GestionApp",
+        "description": "Diseño minimalista y funcional. Presenta las características clave de la aplicación  con jerarquía visual clara, sección de planes  y FAQ estratégica. Diseño responsive con micro-interacciones que guían al usuario hacia el registro.",
+        "skills": ["HTML", "CSS", "JavaScript", "React"],
+        "image": "/portafolio-web/assets/img/img-GestionApp.png",
+        "link": "https://matiasealianelli.github.io/landing-gestion/"
+    },
+    {
+        "id": 2,
         "title": "Clon Manage",
         "description": "Es una réplica de la página de Manage, que incluye funcionalidades interactivas y un diseño responsivo para una experiencia de usuario óptima.",
         "skills": ["HTML", "CSS", "JavaScript", "React"],
