@@ -2,7 +2,7 @@
     {
         "id": 1,
         "title": "Landing page GestionApp",
-        "description": "Diseño minimalista y funcional. Presenta las características clave de la aplicación  con jerarquía visual clara, sección de planes  y FAQ estratégica. Diseño responsive con micro-interacciones que guían al usuario hacia el registro.",
+        "description": "Diseño minimalista y funcional. Presenta las características clave de la aplicación web con jerarquía visual clara, sección de planes y FAQ. Diseño responsive con micro-interacciones que guían al usuario hacia el registro.",
         "skills": ["HTML", "CSS", "JavaScript", "React"],
         "image": "/portafolio-web/assets/img/img-GestionApp.png",
         "link": "https://matiasealianelli.github.io/landing-gestion/"
@@ -14,5 +14,13 @@
         "skills": ["HTML", "CSS", "JavaScript", "React"],
         "image": "/portafolio-web/assets/img/clon-manage.jpg",
         "link": "https://matiasealianelli.github.io/clon-manage/"
+    },
+    {
+        "id": 3,
+        "title": "Sitio Web para Inmobiliaria",
+        "description": "Desarrollé esta web responsive, enfocándome en la presentación clara de propiedades y una experiencia de usuario fluida. Incluye secciones informativas, galería de propiedades destacadas y formulario de contacto.",
+        "skills": ["HTML", "CSS", "JavaScript"],
+        "image": "/portafolio-web/assets/img/img-LandingPage-Inmobiliaria.png",
+        "link": "https://matiasealianelli.github.io/landing-inmobiliaria/"
     }
 ]
