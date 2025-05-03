@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
       <div className="contSections">
+        <Hero />
         <Proyects />
         <Skills />
         <AboutMe />
