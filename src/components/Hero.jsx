@@ -23,7 +23,7 @@ function Hero() {
             <a
               target="_blank"
               className="link-cv"
-              href="/portafolio-web/assets/CV_Matias_Alianelli_Ferreyra.pdf">
+              href="/portafolio-web/assets/CV_Matias_Alianelli_Ferrerya.pdf">
               <button className="btnCV" id="btnCV" href="">
                 Curriculum
               </button>
