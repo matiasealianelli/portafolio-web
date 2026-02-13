@@ -11,6 +11,12 @@
   max-width: 50rem;
   line-height: 1.8rem;
 }
+.linkCertificado{
+  border-bottom: 1.5px solid ; display: flex;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
 /*Media Queries Smartphones*/
 
 @media (max-width: 767px) {

@@ -33,7 +33,7 @@ nav {
 .codeHeader:hover,
 .enlace:hover,
 .enlaceMail:hover,
-.enlaceFooter:hover {
+.enlaceFooter:hover, .linkCertificado:hover{
   color: #50a760;
   transition: all 0.2s ease-in-out;
 }
