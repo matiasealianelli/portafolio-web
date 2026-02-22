@@ -1,6 +1,6 @@
 {
   "name": "portafolio-web",
-  "homepage": "https://matiasealianelli.github.io/portafolio-web/",
+  "homepage": "https://matiasealianelli.vercel.app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

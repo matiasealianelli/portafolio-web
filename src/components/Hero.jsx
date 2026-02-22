@@ -6,13 +6,13 @@ function Hero() {
       <section id="hero" className="sections hero">
         <div className="infoHero">
           <div className="contWelcome">
-            <h3 className="titleWelcome">¡Hola, soy Matias Alianelli!</h3>
+            <h1 className="titleWelcome">¡Hola, soy Matias Alianelli!👋</h1>
           </div>
-          <h1 className="titleHero">Desarrollador Web Front End</h1>
+          <h1 className="titleHero">Desarrollador Web Full Stack</h1>
           <p className="textHero">
-            ¿Estás buscando potenciar tu presencia digital? Soy programador
-            especializado en transformar ideas en sitios modernos, funcionales y
-            atractivos. ¡Hablemos y llevemos tus proyectos al siguiente nivel!
+            ¿Estas buscando que tus servicios o proyectos destaquen por sobre el
+            resto? 
+            Contáctame y llevemos al sigu
           </p>
           <div className="contBtnsHero">
             <a href="https://matiasealianelli.github.io/portafolio-web/#contacto">

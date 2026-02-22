@@ -57,7 +57,7 @@ function Contact() {
       const response = await fetch(
         "https://backend-portafolio-letr.onrender.com/send",
         {
-          origin: "https://matiasealianelli.github.io/portafolio-web/",
+          origin: "https://matiasealianelli.vercel.app/",
           method: "POST",
           headers: {
             "Content-Type": "application/json",

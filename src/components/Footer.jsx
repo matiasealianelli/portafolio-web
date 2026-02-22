@@ -9,35 +9,35 @@ function Footer() {
             <ul>
               <li>
                 <a
-                  href="https://matiasealianelli.github.io/portafolio-web/#hero"
+                  href="https://matiasealianelli.vercel.app/#hero"
                   className="enlaceFooter">
                   Inicio
                 </a>
               </li>
               <li>
                 <a
-                  href="https://matiasealianelli.github.io/portafolio-web/#proyectos"
+                  href="https://matiasealianelli.vercel.app/#proyectos"
                   className="enlaceFooter">
                   Proyectos
                 </a>
               </li>
               <li>
                 <a
-                  href="https://matiasealianelli.github.io/portafolio-web/#sobreMi"
+                  href="https://matiasealianelli.vercel.app/#sobreMi"
                   className="enlaceFooter">
                   Sobre mi
                 </a>
               </li>
               <li>
                 <a
-                  href="https://matiasealianelli.github.io/portafolio-web/#skills"
+                  href="https://matiasealianelli.vercel.app/#skills"
                   className="enlaceFooter">
                   Habilidades
                 </a>
               </li>
               <li>
                 <a
-                  href="https://matiasealianelli.github.io/portafolio-web/#contacto"
+                  href="https://matiasealianelli.vercel.app/#contacto"
                   className="enlaceFooter">
                   Contacto
                 </a>
@@ -52,7 +52,7 @@ function Footer() {
               <a className="enlaceMail">Hola.matiasalianelli@gmail.com</a>
             </div>
             <div className="contIconRedesFooter">
-              <a href="https://wa.me/+5401122888466" target="_blank">
+              <a href="https://wa.me/+5401128290286" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
