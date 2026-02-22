@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../../styles/proyects-styles/Proyect-component.css";
 import "../../index.css";
-import proyects from "./proyects.json";
+import proyects from "./Proyects.json";
 
 const ProyectComponent = () => {
   const [showAll, setShowAll] = useState(false);
