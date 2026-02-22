@@ -9,7 +9,7 @@ function Footer() {
             <ul>
               <li>
                 <a
-                  href="https://matiasealianelli.vercel.app/#hero"
+                  href="https://matiasealianelli.vercel.app/"
                   className="enlaceFooter">
                   Inicio
                 </a>
@@ -49,10 +49,10 @@ function Footer() {
               <h5 className="tituloComunicacion">Canales de comunicacion</h5>
             </div>
             <div>
-              <a className="enlaceMail">Hola.matiasalianelli@gmail.com</a>
+              <a className="enlaceMail">Alianellimatias@gmail.com</a>
             </div>
             <div className="contIconRedesFooter">
-              <a href="https://wa.me/+5401128290286" target="_blank">
+              <a href="https://wa.me/+5401122888466" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -75,7 +75,7 @@ function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/matias-alianelli-b8255727a/"
+                href="https://www.linkedin.com/in/matias-alianelli/"
                 target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

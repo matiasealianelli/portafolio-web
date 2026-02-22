@@ -3,7 +3,7 @@ import "../styles/Header.css";
 function Header() {
     return <>
     <header>
-        <a href="https://matiasealianelli.vercel.app/#hero" className="enlace">
+        <a href="https://matiasealianelli.vercel.app/" className="enlace">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width={16}

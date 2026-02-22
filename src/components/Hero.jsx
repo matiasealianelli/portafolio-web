@@ -15,7 +15,7 @@ function Hero() {
             Contáctame y llevemos al sigu
           </p>
           <div className="contBtnsHero">
-            <a href="https://matiasealianelli.github.io/portafolio-web/#contacto">
+            <a href="https://matiasealianelli.vercel.app/#contacto">
               <button href="" className="btnContactMail">
                 Contactame
               </button>
@@ -23,8 +23,8 @@ function Hero() {
             <a
               target="_blank"
               className="link-cv"
-              href="/portafolio-web/assets/CV_Matias_Alianelli_Ferreyra.pdf">
-              <button className="btnCV" id="btnCV" href="">
+              href="./assets/CV_Matias_Alianelli_Ferreyra.pdf">
+              <button className="btnCV" id="btnCV">
                 Curriculum
               </button>
             </a>
@@ -59,7 +59,7 @@ function Hero() {
           </div>
           <div className="contIcon">
             <a
-              href="https://www.linkedin.com/in/matias-alianelli-b8255727a/"
+              href="https://www.linkedin.com/in/matias-alianelli/"
               target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ function Hero() {
           <div className="contIcon">
             {/* Opción mailto */}
             <a
-              href="https://matiasealianelli.github.io/portafolio-web/#contacto"
+              href="https://matiasealianelli.vercel.app/#contacto"
               className="btn-email">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
